@@ -7,8 +7,9 @@
   </ul>
 <% end %>
 <%= form_for(@student, {html: {class: 'ui form'}}) do |f| %>
+  <% byebug %>
   <div class='field'>
-    <%= f.text_field :name, placeholder: 'Enter the students name...' %>
+    <%= f.text_field :name, {placeholder: 'Enter the students name...', class: 'input field'} %>
   </div>
   <div class='field'>
     <%= f.text_field :email, placeholder: 'Enter the students email...' %>
