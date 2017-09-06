@@ -1,4 +1,7 @@
 class StudentsController < ApplicationController
+
+  before_action :authorized?, except: [:index]
+
   def index
     @students = Student.all
   end
@@ -8,7 +11,6 @@ class StudentsController < ApplicationController
   end
 
   def new
-
     @student = Student.new
   end
 
