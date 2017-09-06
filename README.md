@@ -6,7 +6,9 @@
 ## User Stories
 
 1. As a registered user, I should be able to log in by providing my username (no passwords for today)
+- does the schema need to change?
 
+- what routes(s) do i need?
 
 > When I submit this login form...,
 find the user by their username

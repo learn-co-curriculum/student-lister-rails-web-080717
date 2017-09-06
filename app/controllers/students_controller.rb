@@ -8,6 +8,7 @@ class StudentsController < ApplicationController
   end
 
   def new
+
     @student = Student.new
   end
 
@@ -17,7 +18,7 @@ class StudentsController < ApplicationController
 
     if @student.valid?
       @student.save
-      redirect_to students_path
+      redirect_to @student
     # otherwise, re-render the form
     else
       render :new
